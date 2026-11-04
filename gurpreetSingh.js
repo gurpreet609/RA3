@@ -16,3 +16,6 @@ var bool = false
 console.log(mens)
 console.log(num)
 console.log(bool)
+
+console.log(varia)
+var varia = "posteriorment"
