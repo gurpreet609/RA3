@@ -32,6 +32,7 @@
 // variable = "Hola";
 // console.log(variable);
 //
+
 // const varcon = "Hola"
 // console.log(varcon);
 //
