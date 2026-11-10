@@ -22,3 +22,10 @@ data();
 
 console.log("---------------" +
     "---------------")
+
+function prueba() {
+    let numero = 10;
+}
+
+console.log(numero);
+
