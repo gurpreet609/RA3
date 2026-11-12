@@ -76,14 +76,21 @@
 
 // 10.- Passa't dos valors, retorni cert o falç si el valor i el tipus de dades són el mateix.
 
-const mateixValorTipus = (a, b) => a === b;
-
-console.log(mateixValorTipus(5, "5"));
-console.log(mateixValorTipus(5, 5));
+// const mateixValorTipus = (a, b) => a === b;
+//
+// console.log(mateixValorTipus(5, "5"));
+// console.log(mateixValorTipus(5, 5));
 
 // 11.- Passa’t un valor, realitzi l’arrel quadrada i retorni el valor amb dos decimals.
 
-const arrelQuadrada = (valor) => Math.sqrt(valor).toFixed(2);
+// const arrelQuadrada = (valor) => Math.sqrt(valor).toFixed(2);
+//
+// console.log(arrelQuadrada(9));
+// console.log(arrelQuadrada(10));
 
-console.log(arrelQuadrada(9));
-console.log(arrelQuadrada(10));
+// 12.- Passa’t un String, el retorni en minúscules.
+
+const Minuscules = (text) => text.toLowerCase();
+
+console.log(Minuscules("GURPREET SINGH KAUR"));
+
