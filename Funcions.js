@@ -90,7 +90,16 @@
 
 // 12.- Passa’t un String, el retorni en minúscules.
 
-const Minuscules = (text) => text.toLowerCase();
+// const Minuscules = (text) => text.toLowerCase();
+//
+// console.log(Minuscules("GURPREET SINGH KAUR"));
+//
 
-console.log(Minuscules("GURPREET SINGH KAUR"));
+// 13.- Passa’t dos valors, retorni el que no és null.
+
+const noNull = (a, b) => (a !== null ? a : b);
+
+console.log(noNull(null, "Hola"));
+console.log(noNull(5, null));
+
 
