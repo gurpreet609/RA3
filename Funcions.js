@@ -80,3 +80,10 @@ const mateixValorTipus = (a, b) => a === b;
 
 console.log(mateixValorTipus(5, "5"));
 console.log(mateixValorTipus(5, 5));
+
+// 11.- Passa’t un valor, realitzi l’arrel quadrada i retorni el valor amb dos decimals.
+
+const arrelQuadrada = (valor) => Math.sqrt(valor).toFixed(2);
+
+console.log(arrelQuadrada(9));
+console.log(arrelQuadrada(10));
