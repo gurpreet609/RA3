@@ -97,9 +97,31 @@
 
 // 13.- Passa’t dos valors, retorni el que no és null.
 
-const noNull = (a, b) => (a !== null ? a : b);
+// const noNull = (a, b) => (a !== null ? a : b);
+//
+// console.log(noNull(null, "Hola"));
+// console.log(noNull(5, null));
 
-console.log(noNull(null, "Hola"));
-console.log(noNull(5, null));
+
+// 14.- Definir dos funcions: posicio i dividir
+
+// Funció 1 --> posicio
+function posicio(frase, paraula) {
+    let index = frase.indexOf(paraula);
+    // Si no troba la paraula, retornaria -1, però suposant que hi és:
+    return frase.length - index;
+}
+
+// Funció 2 --> dividir
+function dividir(frase, paraula) {
+    let index = frase.indexOf(paraula);
+    return frase.substring(index);
+}
+
+let unaFrase = "Hola com estas";
+let unaParaula = "com";
+
+console.log(posicio(unaFrase, unaParaula));
+console.log(dividir(unaFrase, unaParaula));
 
 
