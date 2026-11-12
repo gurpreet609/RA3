@@ -54,13 +54,23 @@
 // console.log(exercici7());
 
 
+//
+// function Trenta(a, b) {
+//     return (a === 30 || b === 30 || (a + b) === 30);
+// }
+//
+// console.log(Trenta(15, 15));
+// console.log(Trenta(30, 5));
+// console.log((10, 10));
 
-function Trenta(a, b) {
+
+// 9.- Repeteix l’exercici anterior però com a funció anònima.
+
+var comprovarTrentaAnonima = function(a, b) {
     return (a === 30 || b === 30 || (a + b) === 30);
-}
+};
 
-console.log(Trenta(15, 15));
-console.log(Trenta(30, 5));
-console.log((10, 10));
+console.log(comprovarTrentaAnonima(15, 15));
+console.log(comprovarTrentaAnonima(10, 10));
 
 
