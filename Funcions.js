@@ -66,11 +66,17 @@
 
 // 9.- Repeteix l’exercici anterior però com a funció anònima.
 
-var comprovarTrentaAnonima = function(a, b) {
-    return (a === 30 || b === 30 || (a + b) === 30);
-};
+// var comprovarTrentaAnonima = function(a, b) {
+//     return (a === 30 || b === 30 || (a + b) === 30);
+// };
+//
+// console.log(comprovarTrentaAnonima(15, 15));
+// console.log(comprovarTrentaAnonima(10, 10));
 
-console.log(comprovarTrentaAnonima(15, 15));
-console.log(comprovarTrentaAnonima(10, 10));
 
+// 10.- Passa't dos valors, retorni cert o falç si el valor i el tipus de dades són el mateix.
 
+const mateixValorTipus = (a, b) => a === b;
+
+console.log(mateixValorTipus(5, "5"));
+console.log(mateixValorTipus(5, 5));
