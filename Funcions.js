@@ -14,11 +14,11 @@
 // console.log("---------------" +
 //             "---------------")
 //
-function data() {
-     let fecha = "10/11/2026";
-     console.log(fecha);
- }
-data();
+// function data() {
+//      let fecha = "10/11/2026";
+//      console.log(fecha);
+//  }
+// data();
 //
 // console.log("---------------" +
 //     "---------------")
@@ -40,15 +40,27 @@ data();
 //
 // //6.- Passa 3 enters com a paràmetres (el tercer ha de tenir un valor per defecte) i retorni la suma dels tres.
 
-function Tres(a, b, c = 0) {
-    return a + b + c;
-}
-console.log(Tres(1, 2, 3));
-// 7.- Ha de cridar la funció de l’exercici 3 i retornar el resultat de la funció de l’exercici 6.
+// function Tres(a, b, c = 0) {
+//     return a + b + c;
+// }
+// console.log(Tres(1, 2, 3));
+// // 7.- Ha de cridar la funció de l’exercici 3 i retornar el resultat de la funció de l’exercici 6.
+//
+// function exercici7() {
+//     data();
+//     return Tres(1, 2, 3);
+// }
+//
+// console.log(exercici7());
 
-function exercici7() {
-    data();
-    return Tres(1, 2, 3);
+
+
+function Trenta(a, b) {
+    return (a === 30 || b === 30 || (a + b) === 30);
 }
 
-console.log(exercici7());
+console.log(Trenta(15, 15));
+console.log(Trenta(30, 5));
+console.log((10, 10));
+
+
