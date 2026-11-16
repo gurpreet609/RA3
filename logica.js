@@ -76,12 +76,34 @@ ex3(7.4)
 ex3(9,75)
 ex3(11,75)
 
-//4.- Modifica l’exercici 1, perquè mostri el text: és múltiple de 3, de 7 o de 3 i 7 utilitzant un switch.
+console.log("/////////////////////////////////////")
 
-function ex4 (x) {
-    let codi = (x % 3 === 0 ? 1 : 0) + (x % 7 === 0 ? 2 : 0);
-    switch (codi) {
+//5.- Donat un enter (x), troba el màxim número n tal que 1+2+3+...+n <= x / Exemple: si x=15, n seria 5 ( 1 + 2 +3 +4 +5 = 15)
 
-
+function ex5(x) {
+    let n = 0;
+    let suma = 0;
+    while (suma + (n + 1) <= x) {
+        n++;
+        suma += n;
     }
+    console.log("x=" + x + " ---> n=" + n + " (suma=" + suma + ")");
 }
+
+ex5(15)
+console.log("/////////////////////////////////////")
+
+function ex6(x) {
+    let suma = 0;
+    for (let char of x) {
+        if (!isNaN(char) && char !== " ") {
+            suma += Number(char);
+        }
+    }
+    console.log("Suma: " + suma);
+}
+
+ex6("A1b2C3");
+
+console.log("/////////////////////////////////////")
+
