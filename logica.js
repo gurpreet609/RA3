@@ -145,6 +145,8 @@ console.log("/////////////////////////////////////")
 
 ex8(9);
 
+// 9.- Realitza una funció que, utilitzant bucles, mostri per pantalla el següent patró:
+
 function ex9() {
     let numero = "";
 
@@ -163,6 +165,9 @@ function ex9() {
 console.log("/////////////////////////////////////")
 
 ex9()
+console.log("/////////////////////////////////////")
+
+//10.- Utilitza un do..while per sumar els múltiples de 3 i 5 fins al número 1000.
 
 function ex10() {
     let suma = 0;
@@ -176,4 +181,30 @@ function ex10() {
     console.log("La suma total es:", suma);
 }
 ex10()
+console.log("/////////////////////////////////////")
+
+//11.- Modifica l’exercici 9 perquè només mostri les línies amb estrelles imparelles. Utilitza la sentència continue.
+
+function ex11() {
+    let linia = "";
+    for (let i = 1; i <= 6; i++) {
+        linia += "*";
+        if (i % 2 === 0) {
+            continue;
+        }
+        console.log(linia);
+    }
+}
+ex11();
+
+function ex12(x) {
+    let numero = "123456";
+    let resultado = "";
+
+    for (let i = 0; i < numero.length; i += 2) {
+        resultado += numero[i + 1] + numero[i];
+    }
+    console.log(resultado)
+}
+ex12()
 
