@@ -93,6 +93,8 @@ function ex5(x) {
 ex5(15)
 console.log("/////////////////////////////////////")
 
+//6.- Donat un String (x), sumar els caràcters que siguin números.
+
 function ex6(x) {
     let suma = 0;
     for (let char of x) {
@@ -107,3 +109,57 @@ ex6("A1b2C3");
 
 console.log("/////////////////////////////////////")
 
+//7.- Donat tres enters, ordena de major a menor.
+
+function ex7(enter1, enter2 , enter3) {
+    let aux;
+    let enters = [enter1,enter2,enter3]
+    for (let i = 0; i < enters.length; i++){
+        for (let j = 0; j < enters.length - 1 - i; j++){
+            if (enters[j] < enters[j+1]){
+                aux = enters[j]
+                enters[j] = enters[j+1]
+                enters[j+1] = aux
+            }
+        }
+    }
+    console.log(enters)
+
+}
+
+ex7(1,4,9)
+
+console.log("/////////////////////////////////////")
+
+// 8.- Donat un enter (x), fes un bucle que digui des del 0 a x, quins són parells i quins senars.
+
+    function ex8(num) {
+    for (let i = 0; i <= num; i++) {
+        if (i % 2 === 0) {
+            console.log(i + " es parell");
+        } else
+            console.log(i + " es imparell");
+        }
+}
+
+
+ex8(9);
+
+function ex9() {
+    let numero = "";
+
+    for(let i = 1; i <6; i++) {
+        if(i ===1 ){
+            numero="*"
+        }
+        else {
+            numero = numero + "*";
+        }
+        console.log(numero)
+
+    }
+}
+
+console.log("/////////////////////////////////////")
+
+ex9()
