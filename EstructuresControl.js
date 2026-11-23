@@ -15,5 +15,30 @@ let copiaNumeros = [...numeros];
 
 console.log("Copia array -> " +  copiaNumeros)
 
+console.log("//////////////////////////////////////////////")
 
+//3.- Fusiona dos arrays i esborren els valors duplicats (no utilitzis el Set).
+let array1 = [3, 4, 5, 4];
+let array2 = [3, 4, 5, 6];
 
+let resultado = [];
+
+for (let i = 0; i < array1.length; i++) {
+    resultado.push(array1[i]);
+}
+
+for (let i = 0; i < array2.length; i++) {
+    let repetido = false;
+
+    for (let j = 0; j < resultado.length; j++) {
+        if (array2[i] == resultado[j]) {
+            repetido = true;
+        }
+    }
+
+    if (!repetido) {
+        resultado.push(array2[i]);
+    }
+}
+
+console.log(resultado);
