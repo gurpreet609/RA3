@@ -94,3 +94,19 @@ for (let i = 0; i < paraules.length; i++) {
 }
 
 console.log(resultado2);
+
+console.log("//////////////////////////////////////////////")
+
+//7.- Crea una estructura Map i insereix 3 claus – valor. Les 3 claus han de ser de tipus de dades diferents. Et deixa?
+
+const mapa = new Map();
+mapa.set(1, "primer pas");
+mapa.set("clau", "segon pas");
+mapa.set(true, "tercer pas");
+console.log(mapa);
+
+
+
+
+
+
