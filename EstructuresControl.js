@@ -74,3 +74,23 @@ for (let i = 0; i < numers.length; i++) {
     cubs.push(numers[i] * numers[i] * numers[i])
 }
 console.log(cubs)
+
+console.log("//////////////////////////////////////////////")
+let paraules = ["casa", "hola", "banana", "Gurpreet", "Singh"]
+let resultado2 = [];
+
+for (let i = 0; i < paraules.length; i++) {
+    let comptador = 0;
+
+    for (let j = 0; j < paraules[i].length; j++) {
+        if (paraules[i][j] == "a") {
+            comptador++;
+        }
+    }
+
+    if (comptador > 1) {
+        resultado2.push(paraules[i]);
+    }
+}
+
+console.log(resultado2);
