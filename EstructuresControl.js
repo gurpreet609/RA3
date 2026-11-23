@@ -42,3 +42,35 @@ for (let i = 0; i < array2.length; i++) {
 }
 
 console.log(resultado);
+
+console.log("//////////////////////////////////////////////")
+
+// 4.- Modifica l’exercici anterior per utilitzar una estructura que no permeti duplicats.
+
+let array3 = [3, 4, 5, 4];
+let array4 = [3, 4, 5, 6];
+
+let resultat = new Set();
+
+for (let i = 0; i < array1.length; i++) {
+    resultat.add(array1[i]);
+}
+
+for (let i = 0; i < array2.length; i++) {
+    resultat.add(array2[i]);
+}
+
+console.log(resultat);
+
+console.log("//////////////////////////////////////////////")
+
+//5.- Codifica la funció map d’una Array perquè en creï una nova amb el valor cúbic de cada número.  Exemple: [1, 3, 6] => [1, 27, 216]
+
+let numers = [1, 3, 6]
+
+let cubs = []
+
+for (let i = 0; i < numers.length; i++) {
+    cubs.push(numers[i] * numers[i] * numers[i])
+}
+console.log(cubs)
